@@ -5122,9 +5122,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 862532360}
     m_Modifications:
+    - target: {fileID: 465375367986100881, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4292474367
+      objectReference: {fileID: 0}
+    - target: {fileID: 465375367986100881, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 534621709901813829, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 534621709901813829, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 2758104368727326659, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871019009024274607, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954317234623792240, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4061075236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954317234623792240, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954317234623792240, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3954317234623792240, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4134295688969102325, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
       propertyPath: m_Pivot.x
@@ -5206,10 +5242,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6011277780251057317, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4292474367
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011277780251057317, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 7413549100083069952, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
       propertyPath: m_Name
       value: PotionShopHintButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8126714846968785347, guid: 29f0721ef68ee3e4c9a170476369837a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1581691444504218619, guid: 714d5cb0c5488e04dad3e2c8a474f3c3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40711,6 +40759,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772172621}
   m_CullTransparentMesh: 1
+--- !u!1 &774153448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774153450}
+  - component: {fileID: 774153449}
+  m_Layer: 0
+  m_Name: '[LocalizationManager]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &774153449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774153448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc86f2e359583e4aa467c7beb33b061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.LocalizationManager
+--- !u!4 &774153450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774153448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777230391
 GameObject:
   m_ObjectHideFlags: 0
@@ -46385,7 +46477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &862532360
 Transform:
   m_ObjectHideFlags: 0
@@ -60500,6 +60592,10 @@ PrefabInstance:
     - target: {fileID: 1345648658295714246, guid: 6be9f9da79d0b7d43a147f99da31288a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988346735274724922, guid: 6be9f9da79d0b7d43a147f99da31288a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.17211914
       objectReference: {fileID: 0}
     - target: {fileID: 4521897788843019825, guid: 6be9f9da79d0b7d43a147f99da31288a, type: 3}
       propertyPath: m_Name
@@ -126443,6 +126539,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 774153450}
   - {fileID: 1739882140}
   - {fileID: 1072713727}
   - {fileID: 1720286605}
