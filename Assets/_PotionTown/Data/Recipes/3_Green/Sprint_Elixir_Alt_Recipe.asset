@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Sprint_Elixir_Alt_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: 271a4268aa1f2dd4797107ebfcb340dd, type: 2}
+  - {fileID: 11400000, guid: 71df139fd9955d08b64db11baf43c35b, type: 2}
+  - {fileID: 11400000, guid: f821925e9b1d51fbbbc8dacb9349bf7c, type: 2}
+  resultPotion: {fileID: 11400000, guid: e19dacc0f4485b58b2c136ffe2961faf, type: 2}
+  unlockLevel: 55
+  tier: 6
+  kadimParaReward: 0
+  licenseCost: 0

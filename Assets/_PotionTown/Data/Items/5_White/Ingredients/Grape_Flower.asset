@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944f94ec34de03048bd61bafa4f11b8b, type: 3}
+  m_Name: Grape_Flower
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.ItemData
+  itemName: "\xDCz\xFCm \xC7i\xE7e\u011Fi"
+  itemIcon: {fileID: -4093987921198194536, guid: 69e67dd7e4d73634eb7cdf4563d544e5, type: 3}
+  itemType: 1
+  basePrice: 0
+  buyPrice: 19
+  kadimParaPrice: 0
+  specialEffect: 0
+  effectDuration: 300
+  effectMultiplier: 1

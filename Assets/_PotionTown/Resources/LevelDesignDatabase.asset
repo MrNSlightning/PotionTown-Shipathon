@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355ab22f6bf7235439b6f70f2245789f, type: 3}
+  m_Name: LevelDesignDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.LevelDesignDatabase
+  levels:
+  - totalCustomers: 10
+    possiblePotions:
+    - {fileID: 11400000, guid: 4f1cbee5c7657e54f919ccb5fe2a9c51, type: 2}
+    minSpawnDelay: 0
+    maxSpawnDelay: 3
+    minOrderCount: 1
+    maxOrderCount: 2
+    timePerMood: 10
+    deliveryBonusTime: 1

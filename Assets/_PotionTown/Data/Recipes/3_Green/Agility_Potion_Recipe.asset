@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Agility_Potion_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: 271a4268aa1f2dd4797107ebfcb340dd, type: 2}
+  - {fileID: 11400000, guid: 6b9d21cde3cf197428097cc49122963e, type: 2}
+  resultPotion: {fileID: 11400000, guid: 953e97a9ad1d5356900478cd868e8984, type: 2}
+  unlockLevel: 15
+  tier: 2
+  kadimParaReward: 0
+  licenseCost: 0

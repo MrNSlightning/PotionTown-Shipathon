@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Red_Essence_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: 24077cb91a1a5a1484716b8d2e7dcd03, type: 2}
+  - {fileID: 11400000, guid: 110c62220e065d5fbd245c1a2f117834, type: 2}
+  - {fileID: 11400000, guid: 10f0c4e9eeea57619bb27daed5d310fd, type: 2}
+  resultPotion: {fileID: 11400000, guid: 7390d31c7859ba644b2c03806cbcac1b, type: 2}
+  unlockLevel: 1
+  tier: 1
+  kadimParaReward: 0
+  licenseCost: 0

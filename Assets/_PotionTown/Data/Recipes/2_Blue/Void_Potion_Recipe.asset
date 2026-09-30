@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Void_Potion_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: a41d7295a0f598649809b00dd8c2ae5c, type: 2}
+  - {fileID: 11400000, guid: ad63bd9dee6d513488571a5b5079cd63, type: 2}
+  - {fileID: 11400000, guid: 0804ef9a898c5d3fa58bb24dd1a7d661, type: 2}
+  resultPotion: {fileID: 11400000, guid: 1ad245c8b676502eaf88b06db95bb203, type: 2}
+  unlockLevel: 63
+  tier: 7
+  kadimParaReward: 8
+  licenseCost: 0

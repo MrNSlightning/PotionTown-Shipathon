@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Stamina_Potion_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: 271a4268aa1f2dd4797107ebfcb340dd, type: 2}
+  - {fileID: 11400000, guid: b4f8e33e25a1dae40a6896018eb459ac, type: 2}
+  resultPotion: {fileID: 11400000, guid: cc0fbea6ee60e8a4094a627978a9d43d, type: 2}
+  unlockLevel: 5
+  tier: 1
+  kadimParaReward: 0
+  licenseCost: 0

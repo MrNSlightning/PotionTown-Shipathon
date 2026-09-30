@@ -1,0 +1,181 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e72be2f3b6931e4bb9be904f3e2ae5c, type: 3}
+  m_Name: PotionPassData
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.PotionPassData
+  seasonName: "SEZON 1: S\u0130MYACININ YOLU"
+  passIcon: {fileID: 0}
+  totalTiers: 10
+  xpPerTier: 200
+  premiumPriceKadimPara: 50
+  freeTrackRewards:
+  - tier: 1
+    rewardType: 0
+    amount: 100
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+100 Alt\u0131n"
+  - tier: 2
+    rewardType: 0
+    amount: 200
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+200 Alt\u0131n"
+  - tier: 3
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: 1x Bronz Kasa
+  - tier: 4
+    rewardType: 0
+    amount: 400
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+400 Alt\u0131n"
+  - tier: 5
+    rewardType: 0
+    amount: 500
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+500 Alt\u0131n"
+  - tier: 6
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: 1x Bronz Kasa
+  - tier: 7
+    rewardType: 0
+    amount: 700
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+700 Alt\u0131n"
+  - tier: 8
+    rewardType: 1
+    amount: 2
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: +2 Kadim Para
+  - tier: 9
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: 1x Bronz Kasa
+  - tier: 10
+    rewardType: 0
+    amount: 1000
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+1000 Alt\u0131n"
+  premiumTrackRewards:
+  - tier: 1
+    rewardType: 0
+    amount: 250
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+250 Alt\u0131n"
+  - tier: 2
+    rewardType: 1
+    amount: 10
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: +10 Kadim Para
+  - tier: 3
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "1x Alt\u0131n Kasa"
+  - tier: 4
+    rewardType: 1
+    amount: 20
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: +20 Kadim Para
+  - tier: 5
+    rewardType: 0
+    amount: 1250
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+1250 Alt\u0131n"
+  - tier: 6
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "1x Alt\u0131n Kasa"
+  - tier: 7
+    rewardType: 0
+    amount: 1750
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "+1750 Alt\u0131n"
+  - tier: 8
+    rewardType: 1
+    amount: 40
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: +40 Kadim Para
+  - tier: 9
+    rewardType: 5
+    amount: 1
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: "1x Alt\u0131n Kasa"
+  - tier: 10
+    rewardType: 1
+    amount: 50
+    itemReward: {fileID: 0}
+    characterPrefab: {fileID: 0}
+    shelfId: 
+    rewardIcon: {fileID: 0}
+    rewardDescription: +50 Kadim Para

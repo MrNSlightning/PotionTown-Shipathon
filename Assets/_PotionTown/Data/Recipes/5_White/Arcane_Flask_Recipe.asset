@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Arcane_Flask_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: ea850db216ca01047be03a656b85a59e, type: 2}
+  - {fileID: 11400000, guid: 29ccabfad6325c3c89f2773bc0cb36eb, type: 2}
+  - {fileID: 11400000, guid: 2d53ef6654555367ba245338c5b87db7, type: 2}
+  resultPotion: {fileID: 11400000, guid: 0fcfc94c7a295f2da19b8a1103eb356c, type: 2}
+  unlockLevel: 70
+  tier: 7
+  kadimParaReward: 10
+  licenseCost: 0

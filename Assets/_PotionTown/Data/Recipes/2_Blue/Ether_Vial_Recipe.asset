@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e7e22102e9d5e46a55fd52e8a54ddf, type: 3}
+  m_Name: Ether_Vial_Recipe
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.RecipeData
+  requiredItems:
+  - {fileID: 11400000, guid: a41d7295a0f598649809b00dd8c2ae5c, type: 2}
+  - {fileID: 11400000, guid: 48e290b4c82057fe856ba080987bf279, type: 2}
+  - {fileID: 11400000, guid: 0804ef9a898c5d3fa58bb24dd1a7d661, type: 2}
+  resultPotion: {fileID: 11400000, guid: 4e7879c856f05be5924890994d8a0f09, type: 2}
+  unlockLevel: 43
+  tier: 5
+  kadimParaReward: 0
+  licenseCost: 0

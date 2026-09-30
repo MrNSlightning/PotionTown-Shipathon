@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b49f7d29ff433d4baba51b69e77dc4d, type: 3}
+  m_Name: ShopCatalogData
+  m_EditorClassIdentifier: Assembly-CSharp::PotionShop.ShopCatalogData
+  products:
+  - id: com.potiontavern.kadimpara.small
+    displayName: "10 KAD\u0130M PARA"
+    subtitle: "\xC7\u0131rak Kesesi"
+    description: "Temel iksirler ve sand\u0131klar i\xE7in ba\u015Flang\u0131\xE7
+      kesesi."
+    category: 0
+    priceType: 0
+    realMoneyPrice: 19.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 0
+    rewardAmount: 10
+    lootBoxTier: Bronze
+    isPopular: 0
+    cardAccentColor: {r: 0.28, g: 0.18, b: 0.42, a: 1}
+    icon: {fileID: 0}
+  - id: com.potiontavern.kadimpara.medium
+    displayName: "50 KAD\u0130M PARA"
+    subtitle: "Usta Kesesi [POP\xDCLER]"
+    description: "Taverna ustalar\u0131 i\xE7in en \xE7ok tercih edilen paket.\n+5
+      Ekstra Bonus Dahil!"
+    category: 0
+    priceType: 0
+    realMoneyPrice: 79.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 0
+    rewardAmount: 50
+    lootBoxTier: Bronze
+    isPopular: 1
+    cardAccentColor: {r: 0.45, g: 0.22, b: 0.65, a: 1}
+    icon: {fileID: 0}
+  - id: com.potiontavern.kadimpara.large
+    displayName: "150 KAD\u0130M PARA"
+    subtitle: "Kadim Hazine Sand\u0131\u011F\u0131"
+    description: "B\xFCy\xFCk simyac\u0131lar i\xE7in devasa hazine.\n+30 Ekstra
+      Bonus Dahil!"
+    category: 0
+    priceType: 0
+    realMoneyPrice: 199.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 0
+    rewardAmount: 150
+    lootBoxTier: Bronze
+    isPopular: 0
+    cardAccentColor: {r: 0.65, g: 0.45, b: 0.15, a: 1}
+    icon: {fileID: 0}
+  - id: offer.ad.gold
+    displayName: "\xDCCRETS\u0130Z ALTIN"
+    subtitle: Sponsorlu Destek
+    description: "K\u0131sa bir sponsorlu reklam izle,\n+250 Alt\u0131n an\u0131nda
+      \xE7antana gelsin!"
+    category: 1
+    priceType: 3
+    realMoneyPrice: 19.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 1
+    rewardAmount: 250
+    lootBoxTier: Bronze
+    isPopular: 0
+    cardAccentColor: {r: 0.18, g: 0.5, b: 0.28, a: 1}
+    icon: {fileID: 0}
+  - id: offer.ad.minigame
+    displayName: EKSTRA HAK
+    subtitle: Simya Enerjisi
+    description: "K\u0131sa bir sponsorlu reklam izle,\n+1 Mini Oyun Hakk\u0131 an\u0131nda
+      kazan!"
+    category: 1
+    priceType: 3
+    realMoneyPrice: 19.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 5
+    rewardAmount: 1
+    lootBoxTier: Bronze
+    isPopular: 0
+    cardAccentColor: {r: 0.18, g: 0.45, b: 0.6, a: 1}
+    icon: {fileID: 0}
+  - id: com.potiontavern.removeads
+    displayName: REKLAMLARI KALDIR
+    subtitle: Kusursuz Deneyim
+    description: "T\xFCm zorunlu ve ge\xE7i\u015F reklamlar\u0131 kald\u0131r\u0131l\u0131r.\n\xD6d\xFCll\xFC
+      reklam hediyeleri tek t\u0131kla al\u0131n\u0131r!"
+    category: 1
+    priceType: 0
+    realMoneyPrice: 49.99
+    currencySymbol: "\u20BA"
+    ingamePrice: 500
+    rewardType: 2
+    rewardAmount: 1
+    lootBoxTier: Bronze
+    isPopular: 1
+    cardAccentColor: {r: 0.6, g: 0.2, b: 0.25, a: 1}
+    icon: {fileID: 0}
