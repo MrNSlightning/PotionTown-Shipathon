@@ -188,11 +188,8 @@ namespace PotionShop
                 else
                 {
                     // Panel yoksa doğrudan gün sonu al
-                    if (LevelSystem.Instance != null)
-                    {
-                        LevelSystem.Instance.AdvanceLevel();
-                        Debug.Log("Gün sonu alındı! (Panel atanmamış, direkt geçildi)");
-                    }
+                    LevelSystem.AdvanceLevel();
+                    Debug.Log("Gün sonu alındı! (Panel atanmamış, direkt geçildi)");
                 }
             }
         }

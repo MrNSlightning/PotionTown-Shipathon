@@ -168,6 +168,32 @@ namespace PotionShop
             var config = LiveMonetizationConfig.Instance;
             bool isLive = (config != null && config.adsMode == AdsMode.LiveProduction);
 
+#if UNITY_EDITOR
+            // Unity Editor içerisindeyken Google AdMob plugin'inin anında ödül vermesi yerine,
+            // Oyunun kendi test UI simülatörünü göster (5 saniye beklemeli test ekranı)
+            Debug.LogWarning("[AdsManager] Unity Editor algılandı, görsel reklam simülatörü çalıştırılıyor...");
+            if (OnShowVideoAdSimulator != null)
+            {
+                OnShowVideoAdSimulator.Invoke("Sponsorlu Taverna Simyası", 5,
+                    () =>
+                    {
+                        Debug.Log("<color=green>[VideoAd-Simülatör]</color> Reklam tamamlandı! Ödül veriliyor...");
+                        onRewardCallback?.Invoke();
+                    },
+                    () =>
+                    {
+                        Debug.LogWarning("[VideoAd-Simülatör] Reklam erken kapatıldı veya iptal edildi.");
+                        onFailedCallback?.Invoke();
+                    });
+            }
+            else
+            {
+                Debug.Log("[AdsManager] Ödül simüle ediliyor (Test Modu)...");
+                StartCoroutine(SimulateAdRoutine());
+            }
+            return;
+#endif
+
             if (IsRewardedAdReady())
             {
                 // Reklam hazırsa göster
@@ -180,37 +206,12 @@ namespace PotionShop
             }
             else
             {
-                // Reklam hazır değilse (İnternet yok vs.) Simülatöre düşür veya hata ver
+                // Reklam hazır değilse (İnternet yok vs.) hata ver
                 Debug.LogWarning("[AdsManager] Gösterilecek reklam hazır değil.");
+                onFailedCallback?.Invoke();
                 
-                if (!isLive && OnShowVideoAdSimulator != null)
-                {
-                    OnShowVideoAdSimulator.Invoke("Sponsorlu Taverna Simyası", 5,
-                        () =>
-                        {
-                            Debug.Log("<color=green>[VideoAd-Simülatör]</color> Reklam tamamlandı! Ödül veriliyor...");
-                            onRewardCallback?.Invoke();
-                        },
-                        () =>
-                        {
-                            Debug.LogWarning("[VideoAd-Simülatör] Reklam erken kapatıldı veya iptal edildi.");
-                            onFailedCallback?.Invoke();
-                        });
-                }
-                else if (!isLive)
-                {
-                    // Test modunda fallback olarak 1 saniye bekleyip aç
-                    Debug.Log("[AdsManager] Ödül simüle ediliyor (Test Modu)...");
-                    StartCoroutine(SimulateAdRoutine());
-                }
-                else
-                {
-                    // Canlı modda hazır değilse hata ver (Oyuncuya "İnternetinizi kontrol edin" diyebiliriz)
-                    onFailedCallback?.Invoke();
-                    
-                    // Tekrar yüklemeyi dene
-                    LoadAd();
-                }
+                // Tekrar yüklemeyi dene
+                LoadAd();
             }
         }
 

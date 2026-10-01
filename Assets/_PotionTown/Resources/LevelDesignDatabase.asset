@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LevelDesignDatabase
   m_EditorClassIdentifier: Assembly-CSharp::PotionShop.LevelDesignDatabase
   levels:
-  - totalCustomers: 10
+  - totalCustomers: 1
     possiblePotions:
     - {fileID: 11400000, guid: 4f1cbee5c7657e54f919ccb5fe2a9c51, type: 2}
     minSpawnDelay: 0
@@ -22,3 +22,27 @@ MonoBehaviour:
     maxOrderCount: 2
     timePerMood: 10
     deliveryBonusTime: 1
+    potionPriceMultiplier: 1
+  - totalCustomers: 2
+    possiblePotions:
+    - {fileID: 11400000, guid: 4f1cbee5c7657e54f919ccb5fe2a9c51, type: 2}
+    - {fileID: 11400000, guid: 09e9a4c541b12ac4499843601c881607, type: 2}
+    minSpawnDelay: 0
+    maxSpawnDelay: 3
+    minOrderCount: 1
+    maxOrderCount: 2
+    timePerMood: 10
+    deliveryBonusTime: 1
+    potionPriceMultiplier: 1
+  - totalCustomers: 3
+    possiblePotions:
+    - {fileID: 11400000, guid: 4f1cbee5c7657e54f919ccb5fe2a9c51, type: 2}
+    - {fileID: 11400000, guid: 09e9a4c541b12ac4499843601c881607, type: 2}
+    - {fileID: 11400000, guid: cc0fbea6ee60e8a4094a627978a9d43d, type: 2}
+    minSpawnDelay: 0
+    maxSpawnDelay: 3
+    minOrderCount: 1
+    maxOrderCount: 2
+    timePerMood: 10
+    deliveryBonusTime: 1
+    potionPriceMultiplier: 1

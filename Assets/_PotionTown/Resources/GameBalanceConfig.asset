@@ -25,6 +25,8 @@ MonoBehaviour:
   moodBonusAngry: -10
   customerStartHour: 6
   customerEndHour: 20
+  maxQueueSize: 5
+  queueSpacing: 150
   shopOpenHour: 6
   shopCloseHour: 22
   basePotionVariety: 1
@@ -32,6 +34,9 @@ MonoBehaviour:
   spawnSpeedReductionPerDay: 0.05
   minSpawnSpeedFactor: 0.2
   customerOffScreenX: 280
+  dailyFreeGamePlays: 3
+  miniGameCooldownMinutes: 5
+  miniGameDuration: 60
   cauldronFillDuration: 0.6
   potionEjectDuration: 0.5
   potionJumpHeight: 150

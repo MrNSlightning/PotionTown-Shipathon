@@ -20,7 +20,14 @@ namespace PotionShop
         public const int MAX_LEVEL = 10; // Max level is now 10 based on LevelDesignDatabase
 
         // Genel erişim
-        public static int CurrentLevel => _currentLevel;
+        public static int CurrentLevel 
+        {
+            get
+            {
+                EnsureInitialized();
+                return _currentLevel;
+            }
+        }
         public static int CurrentXP => 0;
 
         // Olaylar
@@ -29,12 +36,10 @@ namespace PotionShop
 
         public static int GetXPForLevel(int level) => 0;
         public static int GetXPToNextLevel() => 0;
-        public void AddXP(int amount) => OnXPGained?.Invoke(amount);
+        public static void AddXP(int amount) => OnXPGained?.Invoke(amount);
 
-        private void Awake()
+        private static void EnsureInitialized()
         {
-            Instance = this;
-
             if (!_isInitialized)
             {
                 _isInitialized = true;
@@ -42,13 +47,21 @@ namespace PotionShop
             }
         }
 
+        private void Awake()
+        {
+            Instance = this;
+            EnsureInitialized();
+        }
+
         private void OnEnable()
         {
             Instance = this;
         }
 
-        public void AdvanceLevel()
+        public static void AdvanceLevel()
         {
+            EnsureInitialized();
+            
             if (_currentLevel >= MAX_LEVEL)
             {
                 Debug.Log("Maksimum seviyedesiniz.");
@@ -69,7 +82,7 @@ namespace PotionShop
         public static bool IsRecipeUnlocked(RecipeData recipe)
         {
             if (recipe == null) return false;
-            return _currentLevel >= recipe.unlockLevel;
+            return CurrentLevel >= recipe.unlockLevel;
         }
 
         /// <summary>
@@ -123,10 +136,11 @@ namespace PotionShop
         /// </summary>
         public static string GetLevelTitle()
         {
-            if (_currentLevel <= 10) return LocalizationManager.Get("lvl_title_apprentice");
-            if (_currentLevel <= 25) return LocalizationManager.Get("lvl_title_journeyman");
-            if (_currentLevel <= 40) return LocalizationManager.Get("lvl_title_master");
-            if (_currentLevel <= 55) return LocalizationManager.Get("lvl_title_grandmaster");
+            int lvl = CurrentLevel;
+            if (lvl <= 10) return LocalizationManager.Get("lvl_title_apprentice");
+            if (lvl <= 25) return LocalizationManager.Get("lvl_title_journeyman");
+            if (lvl <= 40) return LocalizationManager.Get("lvl_title_master");
+            if (lvl <= 55) return LocalizationManager.Get("lvl_title_grandmaster");
             return LocalizationManager.Get("lvl_title_legend");
         }
     }

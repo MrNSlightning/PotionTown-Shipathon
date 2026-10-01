@@ -88,6 +88,7 @@ namespace PotionShop.UI
 
         private Coroutine _revealCoroutine;
         private bool _revealComplete = false;
+        private bool _isTransitioning = false;
 
         private void Awake()
         {
@@ -193,6 +194,7 @@ namespace PotionShop.UI
 
             gameObject.SetActive(true);
             _revealComplete = false;
+            _isTransitioning = false;
 
             if (_revealCoroutine != null)
             {
@@ -415,6 +417,9 @@ namespace PotionShop.UI
         /// </summary>
         public void ClosePanel()
         {
+            if (_isTransitioning) return;
+            _isTransitioning = true;
+
             if (_revealCoroutine != null)
             {
                 StopCoroutine(_revealCoroutine);
@@ -425,10 +430,7 @@ namespace PotionShop.UI
             EnsureReferences();
 
             // 1. Yeni günün akışını hazırla (seviyeyi ilerlet ve müşteri akışını ilklendir)
-            if (LevelSystem.Instance != null)
-            {
-                LevelSystem.Instance.AdvanceLevel();
-            }
+            LevelSystem.AdvanceLevel();
             if (CustomerSpawner.Instance != null)
             {
                 CustomerSpawner.Instance.InitializeLevel();
@@ -482,6 +484,9 @@ namespace PotionShop.UI
         /// </summary>
         public void ConfirmEndDay()
         {
+            if (_isTransitioning) return;
+            _isTransitioning = true;
+
             if (_revealCoroutine != null)
             {
                 StopCoroutine(_revealCoroutine);
@@ -492,10 +497,7 @@ namespace PotionShop.UI
             EnsureReferences();
 
             // 1. Gün sonu al ve yeni güne geç
-            if (LevelSystem.Instance != null)
-            {
-                LevelSystem.Instance.AdvanceLevel();
-            }
+            LevelSystem.AdvanceLevel();
 
             // Yeni seviye/gün müşteri akışını başlat (Dükkan kapalı kalacak, açınca başlayacak)
             if (CustomerSpawner.Instance != null)

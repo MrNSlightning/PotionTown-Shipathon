@@ -18,8 +18,6 @@ namespace PotionShop
             get { return PlayerPrefs.GetInt("MaxCustomerSlots", 1); } // Varsayılan 1 müşteri
             set { PlayerPrefs.SetInt("MaxCustomerSlots", value); PlayerPrefs.Save(); }
         }
-        [Tooltip("Müşteri sayısını Editör'den sıfırlamak veya test etmek için bu butonu kullanabilirsiniz.")]
-        public int debugMaxCustomers = 1;
 
         public float customerSpacing = 240f;
         public float customerY = 0f;
@@ -397,11 +395,8 @@ namespace PotionShop
                 }
                 else
                 {
-                    if (LevelSystem.Instance != null)
-                    {
-                        LevelSystem.Instance.AdvanceLevel();
-                        InitializeLevel();
-                    }
+                    LevelSystem.AdvanceLevel();
+                    InitializeLevel();
                 }
             }
         }
