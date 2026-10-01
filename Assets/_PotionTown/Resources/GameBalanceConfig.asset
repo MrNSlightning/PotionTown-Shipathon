@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d86a07bf95655419026ab166a99a76, type: 3}
   m_Name: GameBalanceConfig
   m_EditorClassIdentifier: Assembly-CSharp::PotionShop.GameBalanceConfig
-  startingGold: 5000
+  startingGold: 10000
   startingKadimPara: 5000
   startingReputation: 100
   reputationBase: 100
